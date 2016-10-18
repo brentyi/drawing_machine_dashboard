@@ -45,8 +45,8 @@ SerialPortLib.list(function(err, ports) {
 function outputlog(s) {
     $output = $('#output');
     val = $output.val();
-    if (val.length > 1000) { //questionable efficiency
-        val = val.substr(val.length - 500);
+    if (val.length > 3000) { //questionable efficiency
+        val = val.substr(val.length - 1500);
     }
     $output.val(val + s);
     $output.scrollTop($output[0].scrollHeight);
