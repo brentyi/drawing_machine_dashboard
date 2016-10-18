@@ -1,5 +1,4 @@
-// needs to be built with browserify
-
+// needs to be built to build/window.js with browserify
 
 
 
@@ -114,7 +113,7 @@ function connect(path, baud) {
 
 
 
-/// Running g-code files
+/// G-Code handling
 
 var gcode_buffer;
 var gcode_index = 0;
