@@ -1,0 +1,15 @@
+{
+  "name": "Drawing Machine Dashboard",
+  "description": "g-code interface for our 2.5d polar plotter",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "assets/icon-16.png", "128": "assets/icon-128.png" },
+  "permissions": [
+      "serial"
+  ]
+}

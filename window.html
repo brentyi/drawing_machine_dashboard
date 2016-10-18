@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Drawing Machine Dashboard</title>
+
+        <link rel="stylesheet" href="assets\font-awesome-4.6.3\css\font-awesome.min.css" />
+        <link rel="stylesheet" href="util.css" />
+        <link rel="stylesheet" href="window.css" />
+    </head>
+    <body>
+        <div id="controls" class="clearfix">
+            <div id="gcode">
+                <i id="run" class="fa fa-play-circle" aria-hidden="true"></i>
+                <i id="stop" class="fa fa-stop-circle" aria-hidden="true"></i>
+                <div id="progress">
+                    <div class="inner"></div>
+                </div>
+            </div>
+            <div id="connection" class="pad_1">
+                <select id="portPath" class="form-control"></select>
+                <button id="connect" class="btn btn-primary">Connect</button>
+            </div>
+        </div>
+
+        <div id="serial_monitor">
+            <textarea id="output" class="form-control" disabled></textarea>
+            <input id="input" type="text" class="form-control" />
+        </div>
+
+        <input type="file" id="upload" class="hide" />
+        <script src="./assets/jquery.min.js"></script>
+        <script src="./build/window.js"></script>
+        <script src="./gcode.js"></script>
+    </body>
+</html>
