@@ -3109,8 +3109,7 @@ function hasOwnProperty(obj, prop) {
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./support/isBuffer":8,"_process":6,"inherits":7}],10:[function(require,module,exports){
-// needs to be built with browserify
-
+// needs to be built to build/window.js with browserify
 
 
 
@@ -3156,8 +3155,8 @@ SerialPortLib.list(function(err, ports) {
 function outputlog(s) {
     $output = $('#output');
     val = $output.val();
-    if (val.length > 1000) {
-        val = val.substr(val.length - 500);
+    if (val.length > 3000) { //questionable efficiency
+        val = val.substr(val.length - 1500);
     }
     $output.val(val + s);
     $output.scrollTop($output[0].scrollHeight);
@@ -3225,7 +3224,7 @@ function connect(path, baud) {
 
 
 
-/// Running g-code files
+/// G-Code handling
 
 var gcode_buffer;
 var gcode_index = 0;

@@ -1,7 +1,7 @@
 # Drawing Machine Dashboard
 ![screenshot](http://brentyi.com/public/drawing_machine_dashboard.png)
 
-Minimalistic monitor & g-code sender for our 2.5D polar plotter. Built as a Google Chrome Packaged app.
+Minimalistic monitor & g-code sender for our 2D polar plotter. Built as a Google Chrome Packaged app.
 
 ---
 

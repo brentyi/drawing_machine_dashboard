@@ -1,5 +1,5 @@
-// needs to be built to build/window.js with browserify
-
+// needs to be built to "build/window.js" with browserify
+// > browserify window.js -o build/window.js
 
 
 // Serial communication
